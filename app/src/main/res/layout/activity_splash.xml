@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
-    android:background="@color/color_primary">
+    android:background="@color/color_primary"
+    tools:context=".SplashActivity">
+    <!--    italic 때문에 글짜가 잘려서 width를 match로 바꿈-->
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="italic"
-        android:textSize="40sp"
-        android:textColor="#000000"
+        android:gravity="center"
         android:lineSpacingExtra="0sp"
-        android:gravity="center_horizontal"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="피시방을\n찾아라"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="피시방을\n찾아라"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
